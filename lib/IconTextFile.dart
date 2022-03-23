@@ -15,9 +15,11 @@ final String label;
         Icon(
           icon,
         size: 70.0,
+        color: Colors.white,
         ),
         Text(label, style: TextStyle(
-          fontSize: 15.0
+          fontSize: 15.0,
+          color: Colors.white,
         ),
         ),
       ],

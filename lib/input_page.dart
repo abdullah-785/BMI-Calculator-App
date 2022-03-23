@@ -47,17 +47,20 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                    
                     child: RepeatContainerCode(
+                      
                       onpressed: (){
                         setState(() {
                           selectGender = Gender.male;
-                          mf = "Male";
+                          
                         });
                       },
                       colors: selectGender == Gender.male ? ActiveColor: deActiveColor,
                       cardWidget: IconTextFile(
-                        icon: FontAwesomeIcons.mars,
+                        icon: (FontAwesomeIcons.mars),
                         label: 'Male',
+                        
                       ),
+                      
                     )),
 
                     /////////first small part of first block
@@ -66,7 +69,7 @@ class _InputPageState extends State<InputPage> {
                       onpressed: (){
                         setState(() {
                           selectGender = Gender.female;
-                          mf = "Female";
+                          
                         });
                       },
                       colors: selectGender == Gender.female ? ActiveColor: deActiveColor,
@@ -88,12 +91,12 @@ class _InputPageState extends State<InputPage> {
               cardWidget: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Height", style: TextStyle(fontSize: 25.0),),
+                  Text("Height", style: TextStyle(fontSize: 25.0, color: Colors.white),),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(sliderHeight.toString(), style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),),
-                      Text("cm"),
+                      Text(sliderHeight.toString(), style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold, color: Colors.white),),
+                      Text("cm", style: TextStyle(color: Colors.white) ),
                       
                   ],
                   ),
@@ -126,11 +129,11 @@ class _InputPageState extends State<InputPage> {
                   cardWidget: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Weight", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+                      Text("Weight", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                        SizedBox(
                             height: 25.0,
                       ),
-                      Text(incrementAndDecrement.toString()),
+                      Text(incrementAndDecrement.toString(), style: TextStyle(color: Colors.white), ),
                       SizedBox(
                             height: 25.0,
                       ),
@@ -167,11 +170,11 @@ class _InputPageState extends State<InputPage> {
                   cardWidget: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Age", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+                      Text("Age", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),),
                        SizedBox(
                             height: 25.0,
                       ),
-                      Text(AgeincrementAndDecrement.toString()),
+                      Text(AgeincrementAndDecrement.toString(), style: TextStyle(color: Colors.white) ),
                       SizedBox(
                             height: 25.0,
                       ),
@@ -219,7 +222,7 @@ class _InputPageState extends State<InputPage> {
               },
               child: Container(
                 
-                    child: Center(child: Text("Calculater", style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),)),
+                    child: Center(child: Text("Calculater", style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold, color: Colors.white),)),
                     color: Colors.red,
                     margin: EdgeInsets.only(top: 10),
                     width: double.infinity,

@@ -27,7 +27,7 @@ class resultScreen extends StatelessWidget {
           //////////////////////First Expanded Widget
           Expanded(child: Center(
             child: Text("Your Result", style: TextStyle(
-              fontSize: 30.0,
+              fontSize: 40.0,
               fontWeight: FontWeight.bold
             ),),
           )),
@@ -40,9 +40,9 @@ class resultScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children:[
-                  Center(child: Text(bmiText, style: TextStyle(fontSize: 18.0, color: Colors.greenAccent),)),
-                  Center(child: Text(bmiResult)),
-                  Center(child: Text(interpretation)),
+                  Center(child: Text(bmiText, style: TextStyle(fontSize: 30.0, color: Colors.greenAccent),)),
+                  Center(child: Text(bmiResult, style: TextStyle(fontSize: 25.0, color: Colors.white),)),
+                  Center(child: Text(interpretation, style: TextStyle(fontSize: 20.0, color: Colors.white),)),
                 ]
               ),
           ),
@@ -55,7 +55,7 @@ class resultScreen extends StatelessWidget {
               },
               child: Container(
                 
-                    child: Center(child: Text("Recalculate", style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),)),
+                    child: Center(child: Text("Recalculate", style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold, color: Colors.white ),)),
                     color: Colors.red,
                     margin: EdgeInsets.only(top: 10),
                     width: double.infinity,
